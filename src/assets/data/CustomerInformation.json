@@ -1,0 +1,21 @@
+{
+    "CustomerName": "Druvee SH",
+    "Mobileno": "9961477836",
+    "CurrentBalance": "642.03",
+    "RechargeDueDate": "27 Oct 2018",
+    "RecommendedRecharge": "150",
+    "LDPEndDate": "19 Jul 2018",
+    "ConnectionType": "Primary",
+    "BoxType": "HD",
+    "Packages": [
+        "99 Monthly Pay Pack - Rs.99,End Date: 19 Jul 2018",
+        " Music Monthly Mar16 Pack -Rs.50,End Date :19 Jul 2018"
+    ],
+    "LastFiveRecharges": [
+        {"RechargeAmount" : "RS.47" ,"Date" : "20 Jun 2018"},
+        {"RechargeAmount" : "Rs.400" ,"Date" : "20 Jun 2018"},
+        {"RechargeAmount" : "Rs.1401" ,"Date" : "19 Jun 2018"}
+
+    ],
+    "RechargeNo" : "3001022445"
+}

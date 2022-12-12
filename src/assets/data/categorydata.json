@@ -1,0 +1,115 @@
+
+[
+    {    
+         "id": "c1", 
+         "title": "Modify Pack", 
+         "icons": "th"
+    },
+    {
+        "id": "c2",
+        "title": "Customer Information", 
+        "icons": "user"
+    },
+    {
+        "id": "c3", 
+        "title": "EVD Transfer", 
+        "icons": "home"
+    },
+    {
+        "id": "c4", 
+        "title": "Customer Recharge", 
+        "icons": "refresh"
+    },
+    {
+        "id": "c5", 
+        "title": "Primary + Multi tv registration", 
+        "icons": "asterisk"
+    },
+    {
+        "id": "c6", 
+        "title": "Repush order", 
+        "icons": "plane"
+    },
+    {
+        "id": "c7", 
+        "title": "Multi TV Account Registration", 
+        "icons": "calendar"
+    },
+    {
+        "id": "c8", 
+        "title": "Activation Status", 
+        "icons": "folder"
+    },
+    {
+        "id": "c9", 
+        "title": "EVD Balance Information", 
+        "icons": "gears"
+    },
+    {
+        "id": "c10", 
+        "title": "Heavy Refresh", 
+        "icons": "linkedin-square"
+    },
+    {
+        "id": "c11", 
+        "title": "Dashboard", 
+        "icons": "credit-card"
+    },
+    {
+        "id": "c12", 
+        "title": "Package Information", 
+        "icons": "bell"
+    },
+    {
+        "id": "c13", 
+        "title": "Dealer Stock", 
+        "icons": "filter"
+    },
+    {
+        "id": "c14", 
+        "title": "Recharge Reversal", 
+        "icons": "cloud"
+    },
+    {
+        "id": "c15", 
+        "title": "My Offers", 
+        "icons": "unsorted"
+    },
+    {
+        "id": "c16", 
+        "title": "Customer Service", 
+        "icons": "envelope"
+    },
+    {
+        "id": "c17", 
+        "title": "FAQ", 
+        "icons": "comments-o"
+    },
+    {
+        "id": "c18", 
+        "title": "Demo Box Details", 
+        "icons": "clipboard"
+    },
+    {
+        "id": "c19", 
+        "title": "Purchase Order", 
+        "icons": "mobile-phone"
+    },
+    {
+        "id": "c20", 
+        "title": "My Lead", 
+        "icons": "folder-o"
+    },
+    {
+        "id": "c21", 
+        "title": "eTSK Registration", 
+        "icons": "mail-reply"
+    },
+    {
+        "id": "c22", 
+        "title": "eTSK Repush", 
+        "icons": "microphone"
+    }
+  
+
+]

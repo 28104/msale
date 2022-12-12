@@ -1,0 +1,9 @@
+ {
+    "User_type": "Supervisor Details",
+    "User_Details" : [
+        {"id": 0, "name": "Manu B M", "contact": "9961477836", "des": "A SI"
+        },
+        {"id": 1, "name": "Sandeep Shetty", "contact": "9847676395", "des": "A SM"
+        }
+    ]
+}
