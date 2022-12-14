@@ -1,11 +1,19 @@
 import React from 'react';
 import {ImageBackground, StyleSheet, Text, View} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {Platform} from 'react-native';
+
+import headerBgImage from '../assets/images/Background/headerBg.jpg';
 
 const Footer = () => {
+  const isWeb = Platform.OS === 'web';
   return (
     <ImageBackground
-      source={require('../assets/images/Background/headerBg.jpg')}
+      source={
+        isWeb
+          ? {uri: headerBgImage}
+          : require('../assets/images/Background/headerBg.jpg')
+      }
       style={styles.imageBackgroung}>
       <View style={styles.view}>
         <Icon name="copyright" color="white" size={12} style={styles.icon} />

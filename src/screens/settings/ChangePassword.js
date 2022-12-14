@@ -15,11 +15,15 @@ import Label from '../../components/Label';
 import {changePasswordApi} from '../../util/api-service';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Popup from '../../components/UI/Popup';
+import {Platform} from 'react-native';
+
+import ForgotPwdIcon from '../../assets/images/ScreenIcons/forgot-password-icon.png';
 
 function CancelHandler() {
   Alert.alert('cancel button', 'No action');
 }
 const ChangePassword = ({navigation}) => {
+  const isWeb = Platform.OS === 'web';
   const [userId, setUsername] = useState();
   const [passwordModalVisisble, setPasswordModalVisible] = useState(false);
   const [errorMessage, setErrorMessage] = useState();
@@ -102,7 +106,11 @@ const ChangePassword = ({navigation}) => {
         <View style={styles.container}>
           <View style={styles.imageContainer}>
             <Image
-              source={require('../../assets/images/ScreenIcons/forgot-password-icon.png')}
+              source={
+                isWeb
+                  ? {uri: ForgotPwdIcon}
+                  : require('../../assets/images/ScreenIcons/forgot-password-icon.png')
+              }
               style={styles.image}
             />
           </View>

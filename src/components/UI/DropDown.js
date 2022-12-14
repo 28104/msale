@@ -10,8 +10,12 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {dropdownApi} from '../../util/api-service';
+import {Platform} from 'react-native';
+
+import headerBgVertImage from '../../assets/images/Background/headerBgvert.jpg';
 
 const DropDown = ({children}) => {
+  const isWeb = Platform.OS === 'web';
   const content = require('../../assets/data/dropdownlabel.json');
   const [listDataSource, setListDataSource] = useState(content);
   const [menuedata, setmenuedata] = useState('');
@@ -71,7 +75,11 @@ const DropDown = ({children}) => {
           onPress={() => setVisible(false)}>
           <View style={[styles.dropdown, {top: dropdownTop, right: 4}]}>
             <ImageBackground
-              source={require('../../assets/images/Background/headerBgvert.jpg')}>
+              source={
+                isWeb
+                  ? {uri: headerBgVertImage}
+                  : require('../../assets/images/Background/headerBgvert.jpg')
+              }>
               {listDataSource.map((item, key) => (
                 <ExpandableComponent
                   key={key}

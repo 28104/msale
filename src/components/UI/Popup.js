@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   View,
   Modal,
@@ -6,12 +6,13 @@ import {
   StyleSheet,
   Dimensions,
   ImageBackground,
-} from "react-native";
+} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import CustomButton from "./CustomButton";
+import CustomButton from './CustomButton';
+import {Platform} from 'react-native';
 
-const HEIGHT = Dimensions.get("window").height;
-const WIDTH = Dimensions.get("window").width;
+const HEIGHT = Dimensions.get('window').height;
+const WIDTH = Dimensions.get('window').width;
 const Popup = ({
   visible,
   header,
@@ -25,15 +26,19 @@ const Popup = ({
   onPress1,
   onPress2,
 }) => {
+  const isWeb = Platform.OS === 'web';
   return (
     <Modal visible={visible} transparent={true}>
       <View style={styles.container}>
-        <View style={styles.textContainer}>
+        <View
+          style={[
+            styles.textContainer,
+            isWeb ? styles.textContainerWeb : null,
+          ]}>
           <View style={styles.header}>
             <ImageBackground
               style={styles.header}
-              source={require("../../assets/images/Background/headerBg.png")}
-            >
+              source={require('../../assets/images/Background/headerBg.png')}>
               <Ionicons
                 name={iconName}
                 color={iconColor}
@@ -72,37 +77,40 @@ export default Popup;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "rgba(0,0,0,0.5)",
-    width: "100%",
-    height: "100%",
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   textContainer: {
     width: WIDTH * 0.9,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     borderRadius: 10,
-    overflow: "hidden",
+    overflow: 'hidden',
+  },
+  textContainerWeb: {
+    width: WIDTH * 0.5,
   },
   header: {
-    flexDirection: "row",
-    width: "100%",
+    flexDirection: 'row',
+    width: '100%',
     height: HEIGHT * 0.05,
-    alignItems: "center",
+    alignItems: 'center',
   },
   content: {
-    width: "100%",
-    backgroundColor: "white",
+    width: '100%',
+    backgroundColor: 'white',
     margin: 0,
   },
   headerText: {
-    color: "white",
+    color: 'white',
     fontSize: 18,
     marginLeft: 10,
   },
   contentText: {
-    color: "black",
+    color: 'black',
     padding: 10,
     fontSize: 16,
   },
@@ -110,9 +118,9 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   buttonContainer: {
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
     marginVertical: 10,
   },
 });
